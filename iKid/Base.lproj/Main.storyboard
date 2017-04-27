@@ -126,7 +126,6 @@
                                 <rect key="frame" x="307" y="568" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <action selector="nextButtonPressed:" destination="IGH-bX-fdT" eventType="touchUpInside" id="KIy-5R-MXx"/>
                                     <segue destination="57m-Oj-nOE" kind="show" id="nMu-WJ-Fua"/>
                                 </connections>
                             </button>
