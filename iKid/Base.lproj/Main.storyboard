@@ -40,13 +40,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ij9-GK-ojt">
-                                <rect key="frame" x="166" y="323" width="30" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXQ-ef-vIq">
                                 <rect key="frame" x="307" y="568" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
@@ -54,10 +47,18 @@
                                     <segue destination="CSx-VZ-6wP" kind="show" id="Zbs-G8-ZVg"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What does a house wear?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ij9-GK-ojt">
+                                <rect key="frame" x="89" y="323" width="197" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Ij9-GK-ojt" firstAttribute="centerX" secondItem="KqV-bS-6dK" secondAttribute="centerX" id="Cya-6x-ssQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mXQ-ef-vIq" secondAttribute="trailing" constant="20" id="aXq-Sb-FE9"/>
+                            <constraint firstItem="Ij9-GK-ojt" firstAttribute="centerY" secondItem="KqV-bS-6dK" secondAttribute="centerY" id="jpW-vf-BE6"/>
                             <constraint firstItem="tqS-KS-m4T" firstAttribute="top" secondItem="mXQ-ef-vIq" secondAttribute="bottom" constant="20" id="zTC-05-21D"/>
                         </constraints>
                     </view>
@@ -82,20 +83,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Punch Line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFu-FJ-sxA">
-                                <rect key="frame" x="145" y="323" width="85" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Punch Line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFu-FJ-sxA">
+                                <rect key="frame" x="145" y="69" width="85" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="House Pun" translatesAutoresizingMaskIntoConstraints="NO" id="883-GS-vTP">
+                                <rect key="frame" x="5" y="205" width="365" height="257"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="883-GS-vTP" secondAttribute="height" multiplier="240:169" id="RAD-f7-U0q"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="883-GS-vTP" firstAttribute="centerY" secondItem="vjZ-vt-2lE" secondAttribute="centerY" id="5p7-N6-bl1"/>
+                            <constraint firstItem="jFu-FJ-sxA" firstAttribute="centerX" secondItem="vjZ-vt-2lE" secondAttribute="centerX" id="Ccs-6z-DY4"/>
+                            <constraint firstItem="jFu-FJ-sxA" firstAttribute="top" secondItem="Nge-H0-29Q" secondAttribute="bottom" constant="5" id="RhB-k9-oHU"/>
+                            <constraint firstItem="883-GS-vTP" firstAttribute="leading" secondItem="vjZ-vt-2lE" secondAttribute="leading" constant="5" id="tmf-Wm-FCK"/>
+                            <constraint firstAttribute="trailing" secondItem="883-GS-vTP" secondAttribute="trailing" constant="5" id="wMF-QM-n2K"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="52I-LW-KL8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1590" y="-692"/>
+            <point key="canvasLocation" x="1589.5999999999999" y="-692.20389805097454"/>
         </scene>
         <!--Good-->
         <scene sceneID="IEV-Uh-EDI">
@@ -248,13 +261,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAE-mk-E8f">
-                                <rect key="frame" x="166" y="323" width="31" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dz3-Kb-ufb">
                                 <rect key="frame" x="307" y="568" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
@@ -262,9 +268,17 @@
                                     <segue destination="lVK-8O-xb2" kind="custom" customClass="CustomFlipSeque" customModule="iKid" customModuleProvider="target" id="aY6-VB-m3x"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you make holy water?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAE-mk-E8f">
+                                <rect key="frame" x="73" y="323" width="229" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="hAE-mk-E8f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bID-dl-7uP"/>
+                            <constraint firstItem="hAE-mk-E8f" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eHW-jZ-OcU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Dz3-Kb-ufb" secondAttribute="trailing" constant="20" id="etZ-I4-Rju"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Dz3-Kb-ufb" secondAttribute="bottom" constant="20" id="hJu-SO-zHk"/>
                         </constraints>
@@ -290,15 +304,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Punch Line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anh-9J-fN4">
-                                <rect key="frame" x="145" y="323" width="85" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You boil the hell out of it." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anh-9J-fN4">
+                                <rect key="frame" x="93" y="323" width="189" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="anh-9J-fN4" firstAttribute="centerX" secondItem="Oqr-76-YAx" secondAttribute="centerX" id="Kbh-bs-aOm"/>
+                            <constraint firstItem="anh-9J-fN4" firstAttribute="centerY" secondItem="Oqr-76-YAx" secondAttribute="centerY" id="nUd-Hg-cUz"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8QL-xR-2Wi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -310,6 +327,7 @@
         <image name="AAA Punchline" width="577" height="590"/>
         <image name="Dad" width="22" height="22"/>
         <image name="Good" width="22" height="22"/>
+        <image name="House Pun" width="625" height="436"/>
         <image name="Pun" width="21" height="19"/>
     </resources>
 </document>
