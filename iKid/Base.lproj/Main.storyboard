@@ -113,7 +113,7 @@
         <!--Good-->
         <scene sceneID="IEV-Uh-EDI">
             <objects>
-                <viewController storyboardIdentifier="Good Joke" id="IGH-bX-fdT" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Good Joke" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IGH-bX-fdT" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jaT-xW-7Fs"/>
                         <viewControllerLayoutGuide type="bottom" id="OHt-H6-ord"/>
@@ -126,7 +126,8 @@
                                 <rect key="frame" x="307" y="568" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="57m-Oj-nOE" kind="show" id="rh1-J5-CdV"/>
+                                    <action selector="nextButtonPressed:" destination="IGH-bX-fdT" eventType="touchUpInside" id="KIy-5R-MXx"/>
+                                    <segue destination="57m-Oj-nOE" kind="show" id="nMu-WJ-Fua"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upon Arriving to help get my keys out of my car, the AAA guy locked his keys in his car and had to call AAA " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kc7-fr-OEg">
@@ -160,7 +161,7 @@
         <!--View Controller-->
         <scene sceneID="dM2-QV-2DV">
             <objects>
-                <viewController storyboardIdentifier="Good Punchline" id="57m-Oj-nOE" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Good Punchline" useStoryboardIdentifierAsRestorationIdentifier="YES" id="57m-Oj-nOE" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rBn-Fs-2b2"/>
                         <viewControllerLayoutGuide type="bottom" id="6Lq-Nb-j6e"/>
@@ -170,7 +171,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Punch Line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yT-9M-IaZ">
-                                <rect key="frame" x="145" y="69" width="85" height="21"/>
+                                <rect key="frame" x="145" y="25" width="85" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -265,7 +266,7 @@
                                 <rect key="frame" x="307" y="568" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="lVK-8O-xb2" kind="custom" customClass="CustomFlipSeque" customModule="iKid" customModuleProvider="target" id="aY6-VB-m3x"/>
+                                    <segue destination="lVK-8O-xb2" kind="show" id="Kg1-u4-fTX"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you make holy water?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAE-mk-E8f">

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9740273A1EB1BD61007380D5 /* GoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974027391EB1BD61007380D5 /* GoodViewController.swift */; };
+		9740273C1EB28CE3007380D5 /* GoodPunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9740273B1EB28CE3007380D5 /* GoodPunchViewController.swift */; };
 		979AFD3A1EB1A23000E23F73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979AFD391EB1A23000E23F73 /* AppDelegate.swift */; };
 		979AFD3C1EB1A23000E23F73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979AFD3B1EB1A23000E23F73 /* ViewController.swift */; };
 		979AFD3F1EB1A23000E23F73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979AFD3D1EB1A23000E23F73 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		974027391EB1BD61007380D5 /* GoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodViewController.swift; sourceTree = "<group>"; };
+		9740273B1EB28CE3007380D5 /* GoodPunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodPunchViewController.swift; sourceTree = "<group>"; };
 		979AFD361EB1A23000E23F73 /* iKid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iKid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		979AFD391EB1A23000E23F73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		979AFD3B1EB1A23000E23F73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				979AFD451EB1A23000E23F73 /* Info.plist */,
 				979AFD671EB1AC8500E23F73 /* CustomFlipSeque.swift */,
 				974027391EB1BD61007380D5 /* GoodViewController.swift */,
+				9740273B1EB28CE3007380D5 /* GoodPunchViewController.swift */,
 			);
 			path = iKid;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			files = (
 				979AFD3C1EB1A23000E23F73 /* ViewController.swift in Sources */,
 				979AFD681EB1AC8500E23F73 /* CustomFlipSeque.swift in Sources */,
+				9740273C1EB28CE3007380D5 /* GoodPunchViewController.swift in Sources */,
 				979AFD3A1EB1A23000E23F73 /* AppDelegate.swift in Sources */,
 				9740273A1EB1BD61007380D5 /* GoodViewController.swift in Sources */,
 			);

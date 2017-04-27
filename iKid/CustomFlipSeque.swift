@@ -10,25 +10,24 @@ import UIKit
 
 class CustomFlipSeque: UIStoryboardSegue {
     override func perform() {
+        
+        
+        // Assign the source and destination views to local variables.
+//        var firstVCView = self.source.view as UIView!
+//        var secondVCView = self.destination.view as UIView!
+        
         UIView.beginAnimations("View Flip", context: nil)
         UIView.setAnimationDuration(0.4)
         UIView.setAnimationCurve(.easeInOut)
-        UIView.setAnimationTransition(.flipFromRight, for: source.view, cache: true)
-        switchViewController(source, to: destination)
+        UIView.setAnimationTransition(.flipFromRight, for: self.source.view, cache: true)
         UIView.commitAnimations()
-    }
-    
-    fileprivate func switchViewController(_ from: UIViewController?, to: UIViewController?) {
-        if from != nil {
-            from!.willMove(toParentViewController: nil)
-            from!.view.removeFromSuperview()
-            from!.removeFromParentViewController()
-        }
         
-        if to != nil {
-            source.addChildViewController(to!)
-            source.view.insertSubview(to!.view, at: 0)
-            to!.didMove(toParentViewController: source)
+        // Animate the transition.
+        UIView.animate(withDuration: 0.4, animations: { () -> Void in
+            
+
+        }) { (Finished) -> Void in
+            self.source.present(self.destination as UIViewController, animated: false, completion: nil)
         }
     }
 
