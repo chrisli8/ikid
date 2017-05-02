@@ -14,7 +14,7 @@
         <!--Pum-->
         <scene sceneID="8I7-w6-IWm">
             <objects>
-                <navigationController id="mhU-ND-Eh2" sceneMemberID="viewController">
+                <navigationController modalTransitionStyle="flipHorizontal" id="mhU-ND-Eh2" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Pum" image="Pun" selectedImage="Pun" id="vN2-Wh-YC1"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3zK-Ro-Tfe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -31,7 +31,7 @@
         <!--Pun-->
         <scene sceneID="NcL-CT-QGq">
             <objects>
-                <viewController storyboardIdentifier="Pun Joke" id="uSF-ra-gZj" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Pun Joke" modalTransitionStyle="flipHorizontal" id="uSF-ra-gZj" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OC7-oy-Uhg"/>
                         <viewControllerLayoutGuide type="bottom" id="tqS-KS-m4T"/>
@@ -74,7 +74,7 @@
         <!--View Controller-->
         <scene sceneID="YEI-xp-Tk2">
             <objects>
-                <viewController id="CSx-VZ-6wP" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="CSx-VZ-6wP" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Nge-H0-29Q"/>
                         <viewControllerLayoutGuide type="bottom" id="Q8i-YP-BBA"/>
@@ -113,7 +113,7 @@
         <!--Good-->
         <scene sceneID="IEV-Uh-EDI">
             <objects>
-                <viewController storyboardIdentifier="Good Joke" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IGH-bX-fdT" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Good Joke" modalTransitionStyle="flipHorizontal" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IGH-bX-fdT" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jaT-xW-7Fs"/>
                         <viewControllerLayoutGuide type="bottom" id="OHt-H6-ord"/>
@@ -126,7 +126,7 @@
                                 <rect key="frame" x="307" y="568" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="57m-Oj-nOE" kind="show" id="nMu-WJ-Fua"/>
+                                    <segue destination="57m-Oj-nOE" kind="show" id="MeY-2p-0ru"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upon Arriving to help get my keys out of my car, the AAA guy locked his keys in his car and had to call AAA " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kc7-fr-OEg">
@@ -160,7 +160,7 @@
         <!--View Controller-->
         <scene sceneID="dM2-QV-2DV">
             <objects>
-                <viewController storyboardIdentifier="Good Punchline" useStoryboardIdentifierAsRestorationIdentifier="YES" id="57m-Oj-nOE" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Good Punchline" modalTransitionStyle="flipHorizontal" useStoryboardIdentifierAsRestorationIdentifier="YES" id="57m-Oj-nOE" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rBn-Fs-2b2"/>
                         <viewControllerLayoutGuide type="bottom" id="6Lq-Nb-j6e"/>
@@ -170,7 +170,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Punch Line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yT-9M-IaZ">
-                                <rect key="frame" x="145" y="25" width="85" height="21"/>
+                                <rect key="frame" x="145" y="69" width="85" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -199,7 +199,7 @@
         <!--Good-->
         <scene sceneID="18Z-2r-TXj">
             <objects>
-                <navigationController id="oK1-IC-p5l" sceneMemberID="viewController">
+                <navigationController modalTransitionStyle="flipHorizontal" id="oK1-IC-p5l" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Good" image="Good" selectedImage="Good" id="0bW-ls-pzj"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VRM-H6-XIG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -235,7 +235,7 @@
         <!--Item-->
         <scene sceneID="kUx-Mh-blV">
             <objects>
-                <navigationController id="Hb5-Oy-Eak" sceneMemberID="viewController">
+                <navigationController modalTransitionStyle="flipHorizontal" id="Hb5-Oy-Eak" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="teg-KA-bUR"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gxQ-ft-Qnd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -252,7 +252,7 @@
         <!--Dad-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="Dad Joke" id="BYZ-38-t0r" customClass="ViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Dad Joke" modalTransitionStyle="flipHorizontal" id="BYZ-38-t0r" customClass="ViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -295,7 +295,7 @@
         <!--View Controller-->
         <scene sceneID="Jsg-Ys-019">
             <objects>
-                <viewController id="lVK-8O-xb2" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="lVK-8O-xb2" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9Wp-aE-b9k"/>
                         <viewControllerLayoutGuide type="bottom" id="1Ma-1d-aqR"/>
